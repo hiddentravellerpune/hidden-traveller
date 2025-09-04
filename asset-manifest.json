@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/hidden-traveller/static/css/main.92d7e0ff.css",
+    "main.js": "/hidden-traveller/static/js/main.8f0a3482.js",
+    "static/js/453.02d3cde5.chunk.js": "/hidden-traveller/static/js/453.02d3cde5.chunk.js",
+    "static/media/image2.jpg": "/hidden-traveller/static/media/image2.4fd6c981e1326346e648.jpg",
+    "static/media/VaranasiAyodhya.jpg": "/hidden-traveller/static/media/VaranasiAyodhya.4a11e3019d2bc08476dd.jpg",
+    "static/media/Pondicherry.jpg": "/hidden-traveller/static/media/Pondicherry.98475ca29279e81a0799.jpg",
+    "static/media/UdupiGokarna.jpg": "/hidden-traveller/static/media/UdupiGokarna.9bf9f8c1d2f4f5bbbf04.jpg",
+    "static/media/image1.jpg": "/hidden-traveller/static/media/image1.a33806f674d5bd36612b.jpg",
+    "static/media/slick.svg": "/hidden-traveller/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/hidden-traveller/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/hidden-traveller/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/hidden-traveller/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/hidden-traveller/index.html",
+    "main.92d7e0ff.css.map": "/hidden-traveller/static/css/main.92d7e0ff.css.map",
+    "main.8f0a3482.js.map": "/hidden-traveller/static/js/main.8f0a3482.js.map",
+    "453.02d3cde5.chunk.js.map": "/hidden-traveller/static/js/453.02d3cde5.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.92d7e0ff.css",
+    "static/js/main.8f0a3482.js"
+  ]
+}
