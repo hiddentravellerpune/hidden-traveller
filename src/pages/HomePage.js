@@ -1,11 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Slider from 'react-slick';
-import { Sun, Compass, Mountain } from 'lucide-react';
-import ContactSection from '../components/ContactSection';
+import { Sun, Compass, Mountain, Star } from 'lucide-react';
 
 // Import carousel CSS
-import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 import ImageOne from '../assets/image1.jpg';
@@ -15,6 +14,24 @@ import ImageThree from '../assets/image3.jpeg';
 import VaranasiAyodhyaImage from '../assets/VaranasiAyodhya.jpg';
 import UdupiGokarnaImage from '../assets/UdupiGokarna.jpg';
 import PondicherryImage from '../assets/Pondicherry.jpg';
+
+// =======================================================================================
+// Star Rating Component
+// =======================================================================================
+const StarRating = ({ rating }) => {
+  const stars = [];
+  for (let i = 0; i < 5; i++) {
+    stars.push(
+      <Star
+        key={i}
+        className={`w-5 h-5 ${
+          i < rating ? 'text-yellow-400 fill-current' : 'text-gray-300'
+        }`}
+      />
+    );
+  }
+  return <div className="flex justify-center mb-4">{stars}</div>;
+};
 
 // =======================================================================================
 // HOME PAGE COMPONENT
@@ -39,7 +56,7 @@ export default function HomePage() {
       image: ImageThree,
     }
   ];
-  
+
   // Data for the tour cards
   const tourCategories = [
     {
@@ -59,6 +76,25 @@ export default function HomePage() {
       description: "A serene coastal town with French influence.",
       image: PondicherryImage,
       path: "/pondicherry",
+    }
+  ];
+
+  // Data for the testimonials section
+  const testimonials = [
+    {
+      rating: 5,
+      quote: "Close your eyes and trust HiddenTraveller. I've just had an amazing experience with them. The whole trek was organised so efficiently. Right from communicating all the information to food & travel arrangements. The whole process was smooth. Also the trek leaders took really good care of everyone's safety. This is the most genuine and best trek organizing company I've come across, they truly admire nature and respect it. 🫶✨️ Kudos to Uday and his team! They are doing a brilliant job by getting a community of nature lovers together and offering them the most beautiful experiences that too at reasonable prices.",
+      name: "Pranali Shetye",
+    },
+    {
+      rating: 5,
+      quote: "Thank you so much for organising such an amazing OFFBEAT WATERFALL TREK which was actually crowd-free and safe!! Everything was just perfect. Right from the communication, pickup time, breakfast ( we absolutely loved the way it was arranged ^^), guidelines, warmup before the trek and the most important part Safety at the waterfalls 🤝🤝✨ Can’t thank you enough for the wonderful day🤌🏻 Looking forward for more such treks💪🏻",
+      name: "Shre W",
+    },
+    {
+      rating: 5,
+      quote: "It was very awesome experience with hidden traveller. Thank you so much for organizing such a fantastic waterfall trek! Everything—from the scenic trail and the refreshing waterfall to the great company—made it an unforgettable experience. Your efforts and coordination were truly appreciated. Looking forward to more adventures with you all!",
+      name: "Ujala Singh",
     }
   ];
 
@@ -152,22 +188,15 @@ export default function HomePage() {
       <section className="container mx-auto p-4 md:p-8">
         <h2 className="text-4xl font-bold text-center mb-8">What Our HiddenTravellers Say</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          <div className="bg-white p-6 rounded-xl shadow-lg">
-            <p className="italic text-gray-700 mb-4">"The best trek organizers. Trekking with them for the last 3 years and never disappointed. From the easiest of treks to the most difficult ones they know what they are doing."</p>
-            <p className="font-bold text-teal-600">- Subhash B.</p>
-          </div>
-          <div className="bg-white p-6 rounded-xl shadow-lg">
-            <p className="italic text-gray-700 mb-4">"HiddenTraveller, you guys are the best. At first, I was worried because we were only two girls joining but I am glad we took the risk. You guys made this experience much more better and comfortable."</p>
-            <p className="font-bold text-teal-600">- Tarka Pednekar</p>
-          </div>
-          <div className="bg-white p-6 rounded-xl shadow-lg">
-            <p className="italic text-gray-700 mb-4">"I enjoyed my trek to Aadrai Jungle. The arrangements were pretty good with proper planning and management. We made some unforgettable memories and good friends."</p>
-            <p className="font-bold text-teal-600">- Hiral Tanna</p>
-          </div>
+          {testimonials.map((testimonial, index) => (
+            <div key={index} className="bg-white p-6 rounded-xl shadow-lg flex flex-col items-center text-center">
+              <StarRating rating={testimonial.rating} />
+              <p className="italic text-gray-700 mb-4 flex-grow">"{testimonial.quote}"</p>
+              <p className="font-bold text-teal-600 mt-auto">- {testimonial.name}</p>
+            </div>
+          ))}
         </div>
       </section>
-
-      <ContactSection />
     </>
   );
 }

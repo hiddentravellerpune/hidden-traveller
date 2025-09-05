@@ -348,9 +348,14 @@ export default function PondicherryPage() {
             <li className="flex items-center"><Users className="mr-3" /> Invitation-Only Batch</li>
             <li className="flex items-center text-2xl font-bold"><IndianRupee className="mr-2" /> 12,499/-</li>
           </ul>
-          <button className="w-full mt-6 bg-white text-teal-600 px-5 py-3 rounded-lg font-bold shadow-lg transition-all duration-300 transform hover:scale-105 hover:bg-gray-100">
-            Book Now
-          </button>
+          <a
+            href="https://forms.gle/oZpybR1xarwEvxx58"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-full block mt-6 text-center bg-white text-teal-600 px-5 py-3 rounded-lg font-bold shadow-lg transition-all duration-300 transform hover:scale-105 hover:bg-gray-100"
+          >
+            Show Interest
+          </a>
         </div>
       </div>
     </section>

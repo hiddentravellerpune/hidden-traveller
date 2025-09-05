@@ -1,10 +1,12 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Menu, X, Wind } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
+import logo from '../assets/htlogo.png';
 
 // =======================================================================================
 // HEADER COMPONENT
-// Enhanced for proper handling during window resizing, with dynamic positioning and state reset.
+// A responsive header with desktop and mobile navigation.
+// It includes a logo, nav links, and a mobile menu that prevents body scrolling when open.
 // =======================================================================================
 export default function Header({ isMobileMenuOpen, setIsMobileMenuOpen }) {
   const navLinks = [
@@ -16,7 +18,8 @@ export default function Header({ isMobileMenuOpen, setIsMobileMenuOpen }) {
   const headerRef = useRef(null);
   const [headerHeight, setHeaderHeight] = useState(0);
 
-  // Update header height dynamically
+  // Effect to dynamically set the header's height. This is crucial for positioning
+  // the mobile menu correctly to start just below the header.
   useEffect(() => {
     const updateHeight = () => {
       if (headerRef.current) {
@@ -28,23 +31,21 @@ export default function Header({ isMobileMenuOpen, setIsMobileMenuOpen }) {
     return () => window.removeEventListener('resize', updateHeight);
   }, []);
 
-  // Prevent body scrolling when mobile menu is open
+  // Effect to handle body scroll locking. When the mobile menu is open,
+  // this prevents the user from scrolling the main page content.
   useEffect(() => {
-    if (isMobileMenuOpen) {
-      document.body.style.overflow = 'hidden';
-    } else {
-      document.body.style.overflow = 'auto';
-    }
+    document.body.style.overflow = isMobileMenuOpen ? 'hidden' : 'auto';
     return () => {
+      // Clean up by re-enabling scrolling when the component unmounts
       document.body.style.overflow = 'auto';
     };
   }, [isMobileMenuOpen]);
 
-  // Close mobile menu on resize to desktop
+  // Effect to automatically close the mobile menu on desktop resize.
+  // This prevents the mobile menu from being stuck open if the window is resized.
   useEffect(() => {
     let timeoutId;
     const handleResize = () => {
-      // Debounce to avoid excessive calls
       clearTimeout(timeoutId);
       timeoutId = setTimeout(() => {
         if (window.innerWidth >= 768) { // md breakpoint
@@ -52,13 +53,11 @@ export default function Header({ isMobileMenuOpen, setIsMobileMenuOpen }) {
         }
       }, 100);
     };
-
     window.addEventListener('resize', handleResize);
-    // Initial check
+    // Also run an initial check
     if (window.innerWidth >= 768) {
       setIsMobileMenuOpen(false);
     }
-
     return () => {
       window.removeEventListener('resize', handleResize);
       clearTimeout(timeoutId);
@@ -69,10 +68,8 @@ export default function Header({ isMobileMenuOpen, setIsMobileMenuOpen }) {
     <header ref={headerRef} className="sticky top-0 z-50 bg-white/80 backdrop-blur-md shadow-sm" role="banner">
       <nav className="container mx-auto px-4 sm:px-6 py-4 flex justify-between items-center" role="navigation">
         <Link to="/" className="flex items-center space-x-2 sm:space-x-3 cursor-pointer">
-          <div className="bg-teal-500 p-2 rounded-full">
-            <Wind className="text-white" size={20} />
-          </div>
-          <span className="text-xl sm:text-2xl font-bold text-gray-800 tracking-tight">HiddenTraveller</span>
+          <img src={logo} alt="Hidden Traveller Logo" className="h-8 w-auto" />
+          <span className="text-xl sm:text-2xl font-bold text-gray-800 tracking-tight">Hidden Traveller</span>
         </Link>
 
         {/* Desktop Navigation */}
