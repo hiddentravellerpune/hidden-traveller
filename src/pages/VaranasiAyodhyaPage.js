@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { MapPin, Clock, Users, IndianRupee, CheckCircle, XCircle, ChevronDown, Compass, Wind, Camera, Leaf, MessageSquare, Shield, Package } from 'lucide-react';
+import { Mail, Phone, Instagram, MapPin, Clock, Users, IndianRupee, CheckCircle, XCircle, ChevronDown, Compass, Wind, Camera, Leaf, MessageSquare, Shield, Package } from 'lucide-react';
 
 // =======================================================================================
 // FAQ ITEM COMPONENT
@@ -223,10 +223,20 @@ export default function VaranasiAyodhyaPage() {
         ),
         contact: (
             <div className="space-y-4 text-gray-600">
-                <h3 className="text-xl font-bold text-gray-800">Call/WhatsApp:</h3>
-                <p>+918668271086</p>
-                <h3 className="text-xl font-bold text-gray-800">Instagram:</h3>
-                <p>@HIDDENTRAVELLER</p>
+                <div className="flex items-center space-x-4">
+                    <Phone className="text-teal-500" size={24} />
+                    <div>
+                    <p className="font-semibold">Call / WhatsApp</p>
+                    <a href="tel:+919876543210" className="text-gray-600 hover:text-teal-500 transition-colors">+91 86682 71086</a>
+                    </div>
+                </div>
+                <div className="flex items-center space-x-4">
+                    <Instagram className="text-pink-500" size={24} />
+                    <div>
+                    <p className="font-semibold">Instagram</p>
+                    <a href="https://www.instagram.com/hiddentraveller" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-pink-500 transition-colors">@hiddentraveller</a>
+                    </div>
+                </div>
             </div>
         ),
         whyUs: (

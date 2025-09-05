@@ -9,7 +9,7 @@ import "slick-carousel/slick/slick-theme.css";
 
 import ImageOne from '../assets/image1.jpg';
 import ImageTwo from '../assets/image2.jpg';
-import ImageThree from '../assets/image3.jpeg';
+import ImageThree from '../assets/image3.jpg';
 
 import VaranasiAyodhyaImage from '../assets/VaranasiAyodhya.jpg';
 import UdupiGokarnaImage from '../assets/UdupiGokarna.jpg';
@@ -41,13 +41,13 @@ export default function HomePage() {
   // Data for the image carousel
   const heroSlides = [
     {
-      title: "Unveiling Udupi & Gokarna",
-      description: "A coastal adventure with temples, treks and backwaters.",
+      title: "Discover Varanasi & Ayodhya",
+      description: "A spiritual journey to India's ancient cities.",
       image: ImageOne,
     },
     {
-      title: "Discover Varanasi & Ayodhya",
-      description: "A spiritual journey to India's ancient cities.",
+      title: "Unveiling Udupi & Gokarna",
+      description: "A coastal adventure with temples, treks and backwaters.",
       image: ImageTwo,
     },
     {
