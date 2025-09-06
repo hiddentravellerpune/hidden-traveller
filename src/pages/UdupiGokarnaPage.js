@@ -159,8 +159,8 @@ export default function UdupiGokarnaPage() {
             <div className="space-y-6 text-gray-600 leading-relaxed">
                 <div>
                     <h3 className="text-xl font-bold text-gray-800 mb-2">Price:</h3>
-                    <p><strong>REGULAR PRICE:</strong> ₹11,999/- PER PERSON</p>
-                    <p><strong>HIDDEN MEMBER PRICE:</strong> ₹11,499/- PER PERSON</p>
+                    <p><strong>REGULAR PRICE:</strong> ₹12,499/- PER PERSON</p>
+                    <p><strong>HIDDEN MEMBER PRICE:</strong> ₹11,999/- PER PERSON</p>
                 </div>
                 <div>
                     <h3 className="text-xl font-bold text-gray-800 mb-2">Booking Policy:</h3>
@@ -352,7 +352,7 @@ export default function UdupiGokarnaPage() {
                         <li className="flex items-center"><MapPin className="mr-3" /> Udupi & Gokarna</li>
                         <li className="flex items-center"><Clock className="mr-3" /> 6 Days / 5 Nights</li>
                         <li className="flex items-center"><Users className="mr-3" /> Invitation-Only Batch</li>
-                        <li className="flex items-center text-2xl font-bold"><IndianRupee className="mr-2" /> 11,999/-</li>
+                        <li className="flex items-center text-2xl font-bold"><IndianRupee className="mr-2" /> 12,499/-</li>
                     </ul>
                     <a
                         href="https://forms.gle/oZpybR1xarwEvxx58"
