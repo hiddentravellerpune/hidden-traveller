@@ -2,6 +2,21 @@ import React, { useState, useEffect, useRef } from 'react';
 import { Mail, Phone, Instagram, MapPin, Clock, Users, IndianRupee, CheckCircle, XCircle, ChevronDown, Compass, Wind, Camera, Leaf, MessageSquare, Shield, Package } from 'lucide-react';
 
 // =======================================================================================
+// IMPORT IMAGES
+// =======================================================================================
+import frenchColony from '../assets/pondicherry/french_colony.jpg';
+import aurobindoAshram from '../assets/pondicherry/aurobindo_ashram.jpg';
+import manakulaTemple from '../assets/pondicherry/manakula_temple.jpg';
+import serenityBeach from '../assets/pondicherry/serenity_beach.jpg';
+import artisticCafes from '../assets/pondicherry/artistic_cafes.jpg';
+import rockBeach from '../assets/pondicherry/rock_beach.jpg';
+import church from '../assets/pondicherry/church.jpg';
+import edenBeach from '../assets/pondicherry/eden_beach.jpg';
+import chidambaramTemple from '../assets/pondicherry/chidambaram_temple.jpg';
+import auroville from '../assets/pondicherry/auroville.jpg';
+import pichavaram from '../assets/pondicherry/pichavaram.jpg';
+
+// =======================================================================================
 // FAQ ITEM COMPONENT
 // =======================================================================================
 const FaqItem = ({ question, answer }) => {
@@ -17,6 +32,25 @@ const FaqItem = ({ question, answer }) => {
             </button>
             <div className={`overflow-hidden transition-all duration-300 ease-in-out ${isOpen ? 'max-h-screen mt-2' : 'max-h-0'}`}>
                 <p className="text-gray-600 leading-relaxed pt-2">{answer}</p>
+            </div>
+        </div>
+    );
+};
+
+// =======================================================================================
+// ATTRACTION CARD COMPONENT
+// =======================================================================================
+const AttractionCard = ({ title, image }) => {
+    return (
+        <div className="relative w-full h-48 rounded-xl overflow-hidden shadow-lg transform transition-transform duration-300 hover:scale-105 group">
+            <img 
+                src={image} 
+                alt={title} 
+                className="absolute inset-0 w-full h-full object-cover" 
+            />
+            {/* Overlay */}
+            <div className="absolute inset-0 bg-black bg-opacity-40 flex items-end justify-center p-4 transition-all duration-300 group-hover:bg-opacity-50">
+                <p className="text-white text-lg font-bold text-center">{title}</p>
             </div>
         </div>
     );
@@ -120,17 +154,17 @@ export default function PondicherryPage() {
     ),
     attractions: (
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 text-gray-600">
-        <div className="p-4 bg-gray-50 rounded-lg shadow-sm"><p className="font-semibold">FRENCH COLONY</p></div>
-        <div className="p-4 bg-gray-50 rounded-lg shadow-sm"><p className="font-semibold">AUROBINDO ASHRAM</p></div>
-        <div className="p-4 bg-gray-50 rounded-lg shadow-sm"><p className="font-semibold">MANAKULA TEMPLE</p></div>
-        <div className="p-4 bg-gray-50 rounded-lg shadow-sm"><p className="font-semibold">SERENITY BEACH</p></div>
-        <div className="p-4 bg-gray-50 rounded-lg shadow-sm"><p className="font-semibold">ARTISTIC CAFÉS</p></div>
-        <div className="p-4 bg-gray-50 rounded-lg shadow-sm"><p className="font-semibold">ROCK BEACH</p></div>
-        <div className="p-4 bg-gray-50 rounded-lg shadow-sm"><p className="font-semibold">CHURCH</p></div>
-        <div className="p-4 bg-gray-50 rounded-lg shadow-sm"><p className="font-semibold">EDEN BEACH</p></div>
-        <div className="p-4 bg-gray-50 rounded-lg shadow-sm"><p className="font-semibold">CHIDAMBARAM TEMPLE</p></div>
-        <div className="p-4 bg-gray-50 rounded-lg shadow-sm"><p className="font-semibold">AUROVILLE</p></div>
-        <div className="p-4 bg-gray-50 rounded-lg shadow-sm"><p className="font-semibold">PICHAVARAM</p></div>
+        <AttractionCard title="FRENCH COLONY" image={frenchColony} />
+        <AttractionCard title="AUROBINDO ASHRAM" image={aurobindoAshram} />
+        <AttractionCard title="MANAKULA TEMPLE" image={manakulaTemple} />
+        <AttractionCard title="SERENITY BEACH" image={serenityBeach} />
+        <AttractionCard title="ARTISTIC CAFÉS" image={artisticCafes} />
+        <AttractionCard title="ROCK BEACH" image={rockBeach} />
+        <AttractionCard title="CHURCH" image={church} />
+        <AttractionCard title="EDEN BEACH" image={edenBeach} />
+        <AttractionCard title="CHIDAMBARAM TEMPLE" image={chidambaramTemple} />
+        <AttractionCard title="AUROVILLE" image={auroville} />
+        <AttractionCard title="PICHAVARAM" image={pichavaram} />
       </div>
     ),
     inclusions: (

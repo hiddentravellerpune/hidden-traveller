@@ -2,6 +2,22 @@ import React, { useState, useEffect, useRef } from 'react';
 import { Mail, Phone, Instagram, MapPin, Clock, Users, IndianRupee, CheckCircle, XCircle, ChevronDown, Compass, Wind, Camera, Leaf, MessageSquare, Shield, Package } from 'lucide-react';
 
 // =======================================================================================
+// IMPORT IMAGES
+// =======================================================================================
+import badeHanuman from '../assets/varanasiayodhya/bade_hanuman.jpg';
+import triveniSangam from '../assets/varanasiayodhya/triveni_sangam.jpg';
+import manikarnikaGhat from '../assets/varanasiayodhya/manikarnika_ghat.jpg';
+import boatRide from '../assets/varanasiayodhya/boat_ride.jpg';
+import ramMandir from '../assets/varanasiayodhya/ram_mandir.jpg';
+import kashiVishwanath from '../assets/varanasiayodhya/kashi_vishwanath.jpg';
+import ramnagarFort from '../assets/varanasiayodhya/ramnagar_fort.jpg';
+import clockTower from '../assets/varanasiayodhya/clock_tower.jpg';
+import theResidency from '../assets/varanasiayodhya/the_residency.jpg';
+import gangaAarti from '../assets/varanasiayodhya/ganga_aarti.jpg';
+import hanumanGarhi from '../assets/varanasiayodhya/hanuman_garhi.jpg';
+import hanumantDham from '../assets/varanasiayodhya/hanumant_dham.jpg';
+
+// =======================================================================================
 // FAQ ITEM COMPONENT
 // Reusable component for the FAQ section.
 // =======================================================================================
@@ -22,6 +38,26 @@ const FaqItem = ({ question, answer }) => {
         </div>
     );
 };
+
+// =======================================================================================
+// ATTRACTION CARD COMPONENT
+// =======================================================================================
+const AttractionCard = ({ title, image }) => {
+    return (
+        <div className="relative w-full h-48 rounded-xl overflow-hidden shadow-lg transform transition-transform duration-300 hover:scale-105 group">
+            <img 
+                src={image} 
+                alt={title} 
+                className="absolute inset-0 w-full h-full object-cover" 
+            />
+            {/* Overlay */}
+            <div className="absolute inset-0 bg-black bg-opacity-40 flex items-end justify-center p-4 transition-all duration-300 group-hover:bg-opacity-50">
+                <p className="text-white text-lg font-bold text-center">{title}</p>
+            </div>
+        </div>
+    );
+};
+
 
 // =======================================================================================
 // VARANASI & AYODHYA PAGE COMPONENT
@@ -151,18 +187,18 @@ export default function VaranasiAyodhyaPage() {
         ),
         attractions: (
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 text-gray-600">
-                <div className="p-4 bg-gray-50 rounded-lg shadow-sm"><p className="font-semibold">TRIVENI SANGAM</p></div>
-                <div className="p-4 bg-gray-50 rounded-lg shadow-sm"><p className="font-semibold">MANIKARNIKA GHAT</p></div>
-                <div className="p-4 bg-gray-50 rounded-lg shadow-sm"><p className="font-semibold">BADE HANUMAN JI MANDIR</p></div>
-                <div className="p-4 bg-gray-50 rounded-lg shadow-sm"><p className="font-semibold">BOAT RIDE</p></div>
-                <div className="p-4 bg-gray-50 rounded-lg shadow-sm"><p className="font-semibold">RAM MANDIR</p></div>
-                <div className="p-4 bg-gray-50 rounded-lg shadow-sm"><p className="font-semibold">KASHI VISHWANATH MANDIR</p></div>
-                <div className="p-4 bg-gray-50 rounded-lg shadow-sm"><p className="font-semibold">RAMNAGAR FORT</p></div>
-                <div className="p-4 bg-gray-50 rounded-lg shadow-sm"><p className="font-semibold">CLOCK TOWER</p></div>
-                <div className="p-4 bg-gray-50 rounded-lg shadow-sm"><p className="font-semibold">THE RESIDENCY</p></div>
-                <div className="p-4 bg-gray-50 rounded-lg shadow-sm"><p className="font-semibold">GANGA AARTI</p></div>
-                <div className="p-4 bg-gray-50 rounded-lg shadow-sm"><p className="font-semibold">HANUMAN GARHI</p></div>
-                <div className="p-4 bg-gray-50 rounded-lg shadow-sm"><p className="font-semibold">HANUMANT DHAM</p></div>
+                <AttractionCard title="TRIVENI SANGAM" image={triveniSangam} />
+                <AttractionCard title="MANIKARNIKA GHAT" image={manikarnikaGhat} />
+                <AttractionCard title="BADE HANUMAN JI MANDIR" image={badeHanuman} />
+                <AttractionCard title="BOAT RIDE" image={boatRide} />
+                <AttractionCard title="RAM MANDIR" image={ramMandir} />
+                <AttractionCard title="KASHI VISHWANATH MANDIR" image={kashiVishwanath} />
+                <AttractionCard title="RAMNAGAR FORT" image={ramnagarFort} />
+                <AttractionCard title="CLOCK TOWER" image={clockTower} />
+                <AttractionCard title="THE RESIDENCY" image={theResidency} />
+                <AttractionCard title="GANGA AARTI" image={gangaAarti} />
+                <AttractionCard title="HANUMAN GARHI" image={hanumanGarhi} />
+                <AttractionCard title="HANUMANT DHAM" image={hanumantDham} />
             </div>
         ),
         inclusions: (

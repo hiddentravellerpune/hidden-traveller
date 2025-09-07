@@ -1,6 +1,17 @@
 import React, { useState, useEffect, useRef } from 'react';
 import {Mail, Phone, Instagram, MapPin, Clock, Users, IndianRupee, CheckCircle, XCircle, ChevronDown, Compass, Wind, Camera, Leaf, MessageSquare, Shield, Package } from 'lucide-react';
 
+import gokarnabeachTrek from '../assets/udupigokarna/gokarna_beach_trek.jpg';
+import heritageVillage from '../assets/udupigokarna/heritage_village.jpg';
+import kapuBeach from '../assets/udupigokarna/kapu_beach.jpg';
+import maravantheBeach from '../assets/udupigokarna/maravanthe_beach.jpg';
+import murdeshwar from '../assets/udupigokarna/murdeshwar.jpg';
+import shriKrishna from '../assets/udupigokarna/shri_krishna_matha_temple.jpg';
+import st_marys_Island from '../assets/udupigokarna/st_marys_islands.jpg';
+import hiddenStepwell from '../assets/udupigokarna/hidden_stepwell.jpg';
+import honnavarBoating from '../assets/udupigokarna/honnavar_boating.jpg';
+import kayaking from '../assets/udupigokarna/kayaking.jpg';
+import magicalSunset from '../assets/udupigokarna/magical_sunset.jpeg';
 // =======================================================================================
 // FAQ ITEM COMPONENT
 // Reusable component for the FAQ section.
@@ -22,6 +33,26 @@ const FaqItem = ({ question, answer }) => {
         </div>
     );
 };
+
+// =======================================================================================
+// ATTRACTION CARD COMPONENT
+// =======================================================================================
+const AttractionCard = ({ title, image }) => {
+    return (
+        <div className="relative w-full h-48 rounded-xl overflow-hidden shadow-lg transform transition-transform duration-300 hover:scale-105 group">
+            <img 
+                src={image} 
+                alt={title} 
+                className="absolute inset-0 w-full h-full object-cover" 
+            />
+            {/* Overlay */}
+            <div className="absolute inset-0 bg-black bg-opacity-40 flex items-end justify-center p-4 transition-all duration-300 group-hover:bg-opacity-50">
+                <p className="text-white text-lg font-bold text-center">{title}</p>
+            </div>
+        </div>
+    );
+};
+
 
 // =======================================================================================
 // UDUPI & GOKARNA PAGE COMPONENT
@@ -117,18 +148,17 @@ export default function UdupiGokarnaPage() {
         ),
         attractions: (
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 text-gray-600">
-                <div className="p-4 bg-gray-50 rounded-lg shadow-sm"><p className="font-semibold">SHRI KRISHNA MATHA TEMPLE</p></div>
-                <div className="p-4 bg-gray-50 rounded-lg shadow-sm"><p className="font-semibold">ST. MARY'S ISLANDS</p></div>
-                <div className="p-4 bg-gray-50 rounded-lg shadow-sm"><p className="font-semibold">MAGICAL SUNSET</p></div>
-                <div className="p-4 bg-gray-50 rounded-lg shadow-sm"><p className="font-semibold">KAPU BEACH</p></div>
-                <div className="p-4 bg-gray-50 rounded-lg shadow-sm"><p className="font-semibold">MARAVANTHE BEACH</p></div>
-                <div className="p-4 bg-gray-50 rounded-lg shadow-sm"><p className="font-semibold">HERITAGE VILLAGE</p></div>
-                <div className="p-4 bg-gray-50 rounded-lg shadow-sm"><p className="font-semibold">KAYAKING</p></div>
-                <div className="p-4 bg-gray-50 rounded-lg shadow-sm"><p className="font-semibold">MURDESHWAR</p></div>
-                <div className="p-4 bg-gray-50 rounded-lg shadow-sm"><p className="font-semibold">MAHABALESHWARA TEMPLE</p></div>
-                <div className="p-4 bg-gray-50 rounded-lg shadow-sm"><p className="font-semibold">HONNAVAR BOATING</p></div>
-                <div className="p-4 bg-gray-50 rounded-lg shadow-sm"><p className="font-semibold">GOKARNA BEACH TREK</p></div>
-                <div className="p-4 bg-gray-50 rounded-lg shadow-sm"><p className="font-semibold">HIDDEN STEPWELL</p></div>
+                <AttractionCard title="SHRI KRISHNA MATHA TEMPLE" image={shriKrishna} />
+                <AttractionCard title="ST. MARY'S ISLANDS" image={st_marys_Island} />
+                <AttractionCard title="MAGICAL SUNSET" image={magicalSunset} />
+                <AttractionCard title="KAPU BEACH" image={kapuBeach} />
+                <AttractionCard title="MARAVANTHE BEACH" image={maravantheBeach} />
+                <AttractionCard title="HERITAGE VILLAGE" image={heritageVillage} />
+                <AttractionCard title="KAYAKING" image={kayaking} />
+                <AttractionCard title="MURDESHWAR" image={murdeshwar} />
+                <AttractionCard title="HONNAVAR BOATING" image={honnavarBoating} />
+                <AttractionCard title="GOKARNA BEACH TREK" image={gokarnabeachTrek} />
+                <AttractionCard title="HIDDEN STEPWELL" image={hiddenStepwell} />
             </div>
         ),
         inclusions: (

@@ -10,6 +10,7 @@ import "slick-carousel/slick/slick-theme.css";
 import ImageOne from '../assets/image1.jpg';
 import ImageTwo from '../assets/image2.jpg';
 import ImageThree from '../assets/image3.jpg';
+import ImageFour from '../assets/image4.jpg';
 
 import VaranasiAyodhyaImage from '../assets/VaranasiAyodhya.jpg';
 import UdupiGokarnaImage from '../assets/UdupiGokarna.jpg';
@@ -54,6 +55,10 @@ export default function HomePage() {
       title: "Experience Serene Pondicherry",
       description: "A serene coastal town with French influence.",
       image: ImageThree,
+    },
+    {
+      title: "Gallery",
+      image: ImageFour,
     }
   ];
 
