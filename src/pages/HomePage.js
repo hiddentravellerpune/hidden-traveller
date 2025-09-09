@@ -88,7 +88,7 @@ export default function HomePage() {
   const testimonials = [
     {
       rating: 5,
-      quote: "Close your eyes and trust HiddenTraveller. I've just had an amazing experience with them. The whole trek was organised so efficiently. Right from communicating all the information to food & travel arrangements. The whole process was smooth. Also the trek leaders took really good care of everyone's safety. This is the most genuine and best trek organizing company I've come across, they truly admire nature and respect it. 🫶✨️ Kudos to Uday and his team! They are doing a brilliant job by getting a community of nature lovers together and offering them the most beautiful experiences that too at reasonable prices.",
+      quote: "Close your eyes and trust Hidden Traveller. I've just had an amazing experience with them. The whole trek was organised so efficiently. Right from communicating all the information to food & travel arrangements. The whole process was smooth. Also the trek leaders took really good care of everyone's safety. This is the most genuine and best trek organizing company I've come across, they truly admire nature and respect it. 🫶✨️ Kudos to Uday and his team! They are doing a brilliant job by getting a community of nature lovers together and offering them the most beautiful experiences that too at reasonable prices.",
       name: "Pranali Shetye",
     },
     {
@@ -165,7 +165,7 @@ export default function HomePage() {
       {/* Why Choose Us Section */}
       <section className="bg-gray-100 p-8 md:p-16">
         <div className="container mx-auto text-center">
-          <h2 className="text-4xl font-bold mb-4">Why HiddenTraveller?</h2>
+          <h2 className="text-4xl font-bold mb-4">Why Hidden Traveller?</h2>
           <p className="text-lg text-gray-600 mb-12 max-w-3xl mx-auto">
             We are passionate about creating safe, memorable, and authentic travel experiences.
           </p>
@@ -191,7 +191,7 @@ export default function HomePage() {
 
       {/* Testimonials Section */}
       <section className="container mx-auto p-4 md:p-8">
-        <h2 className="text-4xl font-bold text-center mb-8">What Our HiddenTravellers Say</h2>
+        <h2 className="text-4xl font-bold text-center mb-8">What Our Hidden Travellers Say</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {testimonials.map((testimonial, index) => (
             <div key={index} className="bg-white p-6 rounded-xl shadow-lg flex flex-col items-center text-center">
