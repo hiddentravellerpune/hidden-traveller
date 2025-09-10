@@ -1,9 +1,9 @@
 {
   "files": {
     "main.css": "/static/css/main.975e97d6.css",
-    "main.js": "/static/js/main.e71e4e98.js",
+    "main.js": "/static/js/main.a1931f5e.js",
     "static/js/453.e21516ab.chunk.js": "/static/js/453.e21516ab.chunk.js",
-    "static/media/image4.jpg": "/static/media/image4.ec1a4ea605e85639a257.jpg",
+    "static/media/homephoto.jpg": "/static/media/homephoto.d73fbdbbcbf641084438.jpg",
     "static/media/image2.jpg": "/static/media/image2.5549c42c0e4a4f32d941.jpg",
     "static/media/gokarna_beach_trek.jpg": "/static/media/gokarna_beach_trek.2ed10b21f1fe310e33af.jpg",
     "static/media/shri_krishna_matha_temple.jpg": "/static/media/shri_krishna_matha_temple.565c5d593314a0047081.jpg",
@@ -51,11 +51,11 @@
     "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/index.html",
     "main.975e97d6.css.map": "/static/css/main.975e97d6.css.map",
-    "main.e71e4e98.js.map": "/static/js/main.e71e4e98.js.map",
+    "main.a1931f5e.js.map": "/static/js/main.a1931f5e.js.map",
     "453.e21516ab.chunk.js.map": "/static/js/453.e21516ab.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.975e97d6.css",
-    "static/js/main.e71e4e98.js"
+    "static/js/main.a1931f5e.js"
   ]
 }
