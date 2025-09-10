@@ -1,4 +1,4 @@
 # https://www.robotstxt.org/robotstxt.html
 User-agent: *
 Allow: /
-Sitemap: https://hiddentraveller.in/sitemap.xml
+Sitemap: https://www.hiddentraveller.in/sitemap.xml
