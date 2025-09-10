@@ -7,10 +7,11 @@ import { Sun, Compass, Mountain, Star } from 'lucide-react';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
+import homephoto from '../assets/homephoto.jpg';
 import ImageOne from '../assets/image1.jpg';
 import ImageTwo from '../assets/image2.jpg';
 import ImageThree from '../assets/image3.jpg';
-import ImageFour from '../assets/image4.jpg';
+
 
 import VaranasiAyodhyaImage from '../assets/VaranasiAyodhya.jpg';
 import UdupiGokarnaImage from '../assets/UdupiGokarna.jpg';
@@ -42,6 +43,11 @@ export default function HomePage() {
   // Data for the image carousel
   const heroSlides = [
     {
+      title: "Welcome to Hidden Traveller",
+      description: "Your adventure awaits...",
+      image: homephoto,
+    },
+    {
       title: "Discover Varanasi & Ayodhya",
       description: "A spiritual journey to India's ancient cities.",
       image: ImageOne,
@@ -56,10 +62,7 @@ export default function HomePage() {
       description: "A serene coastal town with French influence.",
       image: ImageThree,
     },
-    {
-      title: "Gallery",
-      image: ImageFour,
-    }
+    
   ];
 
   // Data for the tour cards
