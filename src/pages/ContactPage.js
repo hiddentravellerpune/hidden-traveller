@@ -53,8 +53,7 @@ export default function ContactPage() {
           <div>
             <p className="font-semibold">Address</p>
             <address className="text-gray-600 not-italic">
-              Dholemala Society, Salisbury Park, <br />
-              Gultekadi, Pune, Maharashtra 411037
+            Kharadi, Pune, Maharashtra 411014
             </address>
           </div>
         </div>

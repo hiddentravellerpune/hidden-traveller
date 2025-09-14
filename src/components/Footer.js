@@ -45,7 +45,7 @@ export default function Footer() {
           <ul className="space-y-2 text-sm">
             <li><a href="mailto:hiddentravellerindia@gmail.com" className="hover:text-teal-400 transition-colors">hiddentravellerindia@gmail.com</a></li>
             <li><a href="tel:+918668271086" className="hover:text-teal-400 transition-colors">+91 86682 71086</a></li>
-            <li>Dholemala Society, Salisbury Park, Pune, India</li>
+            <li>Kharadi, Pune, Maharashtra</li>
           </ul>
         </div>
       </div>

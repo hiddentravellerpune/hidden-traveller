@@ -8,6 +8,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 import homephoto from '../assets/homephoto.jpg';
+import SahyadriImage from '../assets/Sahyadri.jpg';
 import ImageOne from '../assets/image1.jpg';
 import ImageTwo from '../assets/image2.jpg';
 import ImageThree from '../assets/image3.jpg';
@@ -46,6 +47,11 @@ export default function HomePage() {
       title: "Welcome to Hidden Traveller",
       description: "Your adventure awaits...",
       image: homephoto,
+    },
+    {
+      title: "Explore Hidden Sahyadri",
+      description: "Waterfalls, Camping & Forts...",
+      image: SahyadriImage,
     },
     {
       title: "Discover Varanasi & Ayodhya",
