@@ -14,6 +14,7 @@ import ImageTwo from '../assets/image2.jpg';
 import ImageThree from '../assets/image3.jpg';
 
 
+
 import VaranasiAyodhyaImage from '../assets/VaranasiAyodhya.jpg';
 import UdupiGokarnaImage from '../assets/UdupiGokarna.jpg';
 import PondicherryImage from '../assets/Pondicherry.jpg';
