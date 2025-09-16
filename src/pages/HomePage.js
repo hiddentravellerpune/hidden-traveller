@@ -51,7 +51,7 @@ export default function HomePage() {
     },
     {
       title: "Explore Hidden Sahyadri",
-      description: "Offbeat Waterfalls, Camping & Forts...",
+      description: "Offbeat Waterfalls, Camping & Crowdfree Forts...",
       image: SahyadriImage,
     },
     {
