@@ -148,7 +148,7 @@ export default function HomePage() {
 
       {/* Featured Tours Section */}
       <section className="container mx-auto p-4 md:p-8 mt-4">
-        <h2 className="text-4xl font-bold text-center mb-12">Popular Adventures</h2>
+        <h2 className="text-4xl font-bold text-center mb-12">Upcoming backpacking</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {tourCategories.map((tour, index) => (
             <div key={index} className="bg-white rounded-2xl shadow-xl overflow-hidden group">
