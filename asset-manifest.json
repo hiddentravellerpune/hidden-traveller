@@ -1,9 +1,9 @@
 {
   "files": {
-    "main.css": "/static/css/main.b523d0be.css",
-    "main.js": "/static/js/main.b5c65277.js",
+    "main.css": "/static/css/main.5a540edb.css",
+    "main.js": "/static/js/main.f5d53ff8.js",
     "static/js/453.e21516ab.chunk.js": "/static/js/453.e21516ab.chunk.js",
-    "static/media/homephoto.jpg": "/static/media/homephoto.d73fbdbbcbf641084438.jpg",
+    "static/media/homephoto.jpg": "/static/media/homephoto.cdc699f2dc67df9d26a0.jpg",
     "static/media/Sahyadri.jpg": "/static/media/Sahyadri.159745ccba6b62655368.jpg",
     "static/media/image2.jpg": "/static/media/image2.5549c42c0e4a4f32d941.jpg",
     "static/media/gokarna_beach_trek.jpg": "/static/media/gokarna_beach_trek.2ed10b21f1fe310e33af.jpg",
@@ -30,10 +30,14 @@
     "static/media/heritage_village.jpg": "/static/media/heritage_village.6ddadfcded0ad2c92a7f.jpg",
     "static/media/bade_hanuman.jpg": "/static/media/bade_hanuman.cae3e27cd45e6a3104fd.jpg",
     "static/media/honnavar_boating.jpg": "/static/media/honnavar_boating.1453fbd9a177e0482f2e.jpg",
+    "static/media/SStepWaterfall.jpg": "/static/media/SStepWaterfall.1792064f1b222e429bf0.jpg",
     "static/media/artistic_cafes.jpg": "/static/media/artistic_cafes.508e38e6e6805b84f3d6.jpg",
     "static/media/french_colony.jpg": "/static/media/french_colony.43096e2a6b0ef9c4fd02.jpg",
+    "static/media/Himachal.jpg": "/static/media/Himachal.10bfc19588439a6e7e15.jpg",
     "static/media/triveni_sangam.jpg": "/static/media/triveni_sangam.692a4736945e2020744f.jpg",
     "static/media/hanumant_dham.jpg": "/static/media/hanumant_dham.a4aba197476fdc605e1e.jpg",
+    "static/media/KamalGad.jpg": "/static/media/KamalGad.5417d451f36f83a78c7e.jpg",
+    "static/media/GorakhGad.jpg": "/static/media/GorakhGad.36a27a19f303ad54a04a.jpg",
     "static/media/hanuman_garhi.jpg": "/static/media/hanuman_garhi.41329495cba667acc711.jpg",
     "static/media/murdeshwar.jpg": "/static/media/murdeshwar.e5459189b239212179af.jpg",
     "static/media/chidambaram_temple.jpg": "/static/media/chidambaram_temple.324579a4c3f51da46a86.jpg",
@@ -51,12 +55,12 @@
     "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/index.html",
-    "main.b523d0be.css.map": "/static/css/main.b523d0be.css.map",
-    "main.b5c65277.js.map": "/static/js/main.b5c65277.js.map",
+    "main.5a540edb.css.map": "/static/css/main.5a540edb.css.map",
+    "main.f5d53ff8.js.map": "/static/js/main.f5d53ff8.js.map",
     "453.e21516ab.chunk.js.map": "/static/js/453.e21516ab.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b523d0be.css",
-    "static/js/main.b5c65277.js"
+    "static/css/main.5a540edb.css",
+    "static/js/main.f5d53ff8.js"
   ]
 }
