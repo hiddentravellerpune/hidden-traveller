@@ -20,7 +20,7 @@ export default function Footer() {
           <div className="flex space-x-4">
             <a href="https://www.instagram.com/hiddentraveller" target="_blank" rel="noopener noreferrer" className="hover:text-teal-400 transition-colors" aria-label="Instagram"><Instagram /></a>
             <a href="https://www.facebook.com/hiddentraveller" target="_blank" rel="noopener noreferrer" className="hover:text-teal-400 transition-colors" aria-label="Facebook"><Facebook /></a>
-            <a href="https://www.youtube.com/channel/UC-YOUR-CHANNEL-ID" target="_blank" rel="noopener noreferrer" className="hover:text-teal-400 transition-colors" aria-label="YouTube"><Youtube /></a>
+            <a href="https://www.youtube.com/@HiddenTravellerindia" target="_blank" rel="noopener noreferrer" className="hover:text-teal-400 transition-colors" aria-label="YouTube"><Youtube /></a>
           </div>
         </div>
         <div className="space-y-4">
