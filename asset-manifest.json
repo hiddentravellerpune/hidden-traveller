@@ -1,11 +1,10 @@
 {
   "files": {
-    "main.css": "/static/css/main.ce01e14f.css",
-    "main.js": "/static/js/main.830d2415.js",
+    "main.css": "/static/css/main.0828c5e9.css",
+    "main.js": "/static/js/main.e179ae53.js",
     "static/js/453.e21516ab.chunk.js": "/static/js/453.e21516ab.chunk.js",
     "static/media/Customtour.jpg": "/static/media/Customtour.0210fbb99bbeb1392999.jpg",
     "static/media/SecretWaterfall.jpg": "/static/media/SecretWaterfall.cd5e1068300b559d357a.jpg",
-    "static/media/Camping.jpg": "/static/media/Camping.657170a517ec50475505.jpg",
     "static/media/homephoto.jpg": "/static/media/homephoto.cdc699f2dc67df9d26a0.jpg",
     "static/media/Sahyadri.jpg": "/static/media/Sahyadri.159745ccba6b62655368.jpg",
     "static/media/image2.jpg": "/static/media/image2.5549c42c0e4a4f32d941.jpg",
@@ -13,6 +12,7 @@
     "static/media/shri_krishna_matha_temple.jpg": "/static/media/shri_krishna_matha_temple.565c5d593314a0047081.jpg",
     "static/media/st_marys_islands.jpg": "/static/media/st_marys_islands.2de4d36d000d41922c64.jpg",
     "static/media/kapu_beach.jpg": "/static/media/kapu_beach.098c4a9ad17c16d64fc9.jpg",
+    "static/media/Camping.jpeg": "/static/media/Camping.bcbec00f486684be7554.jpeg",
     "static/media/pichavaram.jpg": "/static/media/pichavaram.dc1c645194dc9265389d.jpg",
     "static/media/maravanthe_beach.jpg": "/static/media/maravanthe_beach.a26473d1d3df1b096867.jpg",
     "static/media/VaranasiAyodhya.jpg": "/static/media/VaranasiAyodhya.4a11e3019d2bc08476dd.jpg",
@@ -29,6 +29,7 @@
     "static/media/aurobindo_ashram.jpg": "/static/media/aurobindo_ashram.df990d6882dc11c193fc.jpg",
     "static/media/ram_mandir.jpg": "/static/media/ram_mandir.61196087f8a3acb4f99c.jpg",
     "static/media/auroville.jpg": "/static/media/auroville.274b3680660f44e4b144.jpg",
+    "static/media/Konkan.jpeg": "/static/media/Konkan.2fc13cb97a283bf98e92.jpeg",
     "static/media/homephotoMobile.jpg": "/static/media/homephotoMobile.f2a670eedb42b9f0a626.jpg",
     "static/media/church.jpg": "/static/media/church.83323f579908928fd344.jpg",
     "static/media/SahyadriMobile.jpg": "/static/media/SahyadriMobile.26716991cee7e3847220.jpg",
@@ -61,12 +62,12 @@
     "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/index.html",
-    "main.ce01e14f.css.map": "/static/css/main.ce01e14f.css.map",
-    "main.830d2415.js.map": "/static/js/main.830d2415.js.map",
+    "main.0828c5e9.css.map": "/static/css/main.0828c5e9.css.map",
+    "main.e179ae53.js.map": "/static/js/main.e179ae53.js.map",
     "453.e21516ab.chunk.js.map": "/static/js/453.e21516ab.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ce01e14f.css",
-    "static/js/main.830d2415.js"
+    "static/css/main.0828c5e9.css",
+    "static/js/main.e179ae53.js"
   ]
 }
