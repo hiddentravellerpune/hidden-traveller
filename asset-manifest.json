@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.0828c5e9.css",
-    "main.js": "/static/js/main.404a26d1.js",
+    "main.js": "/static/js/main.b7b6de02.js",
     "static/js/453.e21516ab.chunk.js": "/static/js/453.e21516ab.chunk.js",
     "static/media/Customtour.jpg": "/static/media/Customtour.0210fbb99bbeb1392999.jpg",
     "static/media/SecretWaterfall.jpg": "/static/media/SecretWaterfall.cd5e1068300b559d357a.jpg",
@@ -11,6 +11,7 @@
     "static/media/gokarna_beach_trek.jpg": "/static/media/gokarna_beach_trek.2ed10b21f1fe310e33af.jpg",
     "static/media/shri_krishna_matha_temple.jpg": "/static/media/shri_krishna_matha_temple.565c5d593314a0047081.jpg",
     "static/media/st_marys_islands.jpg": "/static/media/st_marys_islands.2de4d36d000d41922c64.jpg",
+    "static/media/KokanRoadTrip.jpeg": "/static/media/KokanRoadTrip.17ce2c557e7b7705e678.jpeg",
     "static/media/kapu_beach.jpg": "/static/media/kapu_beach.098c4a9ad17c16d64fc9.jpg",
     "static/media/Camping.jpeg": "/static/media/Camping.bcbec00f486684be7554.jpeg",
     "static/media/pichavaram.jpg": "/static/media/pichavaram.dc1c645194dc9265389d.jpg",
@@ -29,7 +30,7 @@
     "static/media/aurobindo_ashram.jpg": "/static/media/aurobindo_ashram.df990d6882dc11c193fc.jpg",
     "static/media/ram_mandir.jpg": "/static/media/ram_mandir.61196087f8a3acb4f99c.jpg",
     "static/media/auroville.jpg": "/static/media/auroville.274b3680660f44e4b144.jpg",
-    "static/media/Konkan.jpeg": "/static/media/Konkan.2fc13cb97a283bf98e92.jpeg",
+    "static/media/KonkanRatna.jpeg": "/static/media/KonkanRatna.2fc13cb97a283bf98e92.jpeg",
     "static/media/homephotoMobile.jpg": "/static/media/homephotoMobile.f2a670eedb42b9f0a626.jpg",
     "static/media/church.jpg": "/static/media/church.83323f579908928fd344.jpg",
     "static/media/SahyadriMobile.jpg": "/static/media/SahyadriMobile.26716991cee7e3847220.jpg",
@@ -63,11 +64,11 @@
     "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/index.html",
     "main.0828c5e9.css.map": "/static/css/main.0828c5e9.css.map",
-    "main.404a26d1.js.map": "/static/js/main.404a26d1.js.map",
+    "main.b7b6de02.js.map": "/static/js/main.b7b6de02.js.map",
     "453.e21516ab.chunk.js.map": "/static/js/453.e21516ab.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0828c5e9.css",
-    "static/js/main.404a26d1.js"
+    "static/js/main.b7b6de02.js"
   ]
 }
