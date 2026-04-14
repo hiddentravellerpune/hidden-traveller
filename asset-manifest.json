@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.0828c5e9.css",
-    "main.js": "/static/js/main.db116233.js",
+    "main.js": "/static/js/main.d19bbab7.js",
     "static/js/453.e21516ab.chunk.js": "/static/js/453.e21516ab.chunk.js",
     "static/media/Customtour.jpg": "/static/media/Customtour.0210fbb99bbeb1392999.jpg",
     "static/media/SecretWaterfall.jpg": "/static/media/SecretWaterfall.cd5e1068300b559d357a.jpg",
@@ -13,6 +13,7 @@
     "static/media/st_marys_islands.jpg": "/static/media/st_marys_islands.2de4d36d000d41922c64.jpg",
     "static/media/KokanRoadTrip.jpeg": "/static/media/KokanRoadTrip.17ce2c557e7b7705e678.jpeg",
     "static/media/kapu_beach.jpg": "/static/media/kapu_beach.098c4a9ad17c16d64fc9.jpg",
+    "static/media/AnjarleTurtle.jpeg": "/static/media/AnjarleTurtle.e7080c39210a0bab4c6d.jpeg",
     "static/media/Camping.jpeg": "/static/media/Camping.bcbec00f486684be7554.jpeg",
     "static/media/pichavaram.jpg": "/static/media/pichavaram.dc1c645194dc9265389d.jpg",
     "static/media/maravanthe_beach.jpg": "/static/media/maravanthe_beach.a26473d1d3df1b096867.jpg",
@@ -64,11 +65,11 @@
     "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/index.html",
     "main.0828c5e9.css.map": "/static/css/main.0828c5e9.css.map",
-    "main.db116233.js.map": "/static/js/main.db116233.js.map",
+    "main.d19bbab7.js.map": "/static/js/main.d19bbab7.js.map",
     "453.e21516ab.chunk.js.map": "/static/js/453.e21516ab.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0828c5e9.css",
-    "static/js/main.db116233.js"
+    "static/js/main.d19bbab7.js"
   ]
 }
